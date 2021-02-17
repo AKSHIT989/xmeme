@@ -1,0 +1,124 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Norican&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* NavigationBar color */
+.color-nav {
+	background-color: #0c1a32;
+	top: 0;
+}
+
+/* Logo of XMEME */
+#navbar-logo {
+	font-family: "Norican", cursive;
+	font-size: xx-large;
+	color: #00ffff;
+}
+#navbar-logo:hover {
+	color: rgba(0, 255, 255, 0.8);
+}
+
+/* Adding background pattern */
+body {
+	background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23D3D3D3' fill-opacity='0.22' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Styling asterisks denoting required */
+sup {
+	color: red;
+}
+
+/* Styling titles for all pages */
+.body-title {
+	font-family: "Righteous", cursive, sans-serif;
+	color: #0c1a32;
+}
+
+/* Styling "Make sure the endpoint points to image only" on post/update page */
+.url-warning {
+	color: red;
+	font-weight: normal;
+	font-size: small;
+}
+.column {
+	padding: 1rem;
+}
+.meme-notfound {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/* Loader until data is fetched */
+.loader {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 1s linear infinite;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+hr {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+/* Styling cards */
+.dashboard-card {
+	background: rgba(255, 255, 255);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border-bottom: 5px solid red;
+}
+
+.dashboard-cardImage {
+	border-radius: 5px;
+}
+.dashboard-cardImage:hover {
+	cursor: zoom-in;
+}
+
+/* For creating a zoom effect on clicking on image */
+.dashboard-cardImage:active {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	z-index: 999;
+	cursor: zoom-out;
+}
+
+/* For styling about me page */
+.aboutme-container {
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	background-color: white;
+	padding: 0 -15px;
+	border-radius: 10px;
+}
